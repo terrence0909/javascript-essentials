@@ -9,6 +9,8 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    // NEW: Get value from the user experience textarea
+    const userExperience = document.getElementById('userExperince').value;
     
     // Display thank you message
     alert('Thank you for your valuable feedback')
@@ -21,6 +23,8 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    // NEW: Display the user experience
+    document.getElementById('userExperience').innerHTML = userExperience;
 
     // Make the user information section visible
     document.getElementById('userInfo').style.display = 'block';
